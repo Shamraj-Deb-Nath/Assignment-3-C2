@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +9,58 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/d67a630793.js" crossorigin="anonymous"></script>
+    <style>
 
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
-     <style>
-
-        .sora-font{
-          font-family: "Sora", serif;
-          font-weight: 400;
-          font-style: normal;
-        }
-        
-    </style>
+.sora-font{
+  font-family: "Sora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  </style>
 
 </head>
-<body>
-    
+<body class="sora-font">
+
+    <!-- Header section -->
+     <header class="bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3] px-5 py-3 lg:border-none border border-green-300 sora-font lg:border no-border">
+        <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-5 lg:px-20 ">
+        <div class="flex w-full items-center justify-between">
+            <!-- Left Section (Logo) -->
+            <div class="flex items-center">
+                <img src="c2-assets/logo-header.png" alt="Logo" class="w-15 h-10">               
+            </div>
+
+            <!--Links -->
+            <div class="hidden lg:flex gap-10">
+                <a class="hover:text-green-500 cursor-pointer">Product</a>
+                <a class="hover:text-green-500 cursor-pointer">Services</a>
+                <a class="hover:text-green-500 cursor-pointer">Contact us</a>
+            </div>
+            
+            <!-- Right Section (Icons & Buttons) -->
+            <div class="flex items-center gap-4">
+               
+                <i class="fa-solid fa-magnifying-glass hidden  lg:block"></i> 
+                <i class="fa-solid fa-cart-shopping hidden lg:block"></i>
+                <a class="btn bg-white border-green-500 text-black px-4 py-2 lg:flex hidden">Login</a>
+                <a class="btn bg-green-500 text-black px-4 py-2 lg:flex hidden">Register</a>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <label for="menu-toggle" class="cursor-pointer">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+     </header>
 </body>
 </html>
